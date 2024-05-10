@@ -1,9 +1,5 @@
 # see <https://cliutils.gitlab.io/modern-cmake/chapters/basics.html#minimum-version>
-cmake_minimum_required(VERSION 3.7...3.25)
-
-if(${CMAKE_VERSION} VERSION_LESS 3.12)
-    cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
-endif()
+cmake_minimum_required(VERSION 3.15...3.25)
 
 project(example_json_read
             DESCRIPTION "Demonstrates the use of an external library to read a JSON document."
