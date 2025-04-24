@@ -4,9 +4,19 @@ Example of parsing a JSON document using the [cJSON](https://github.com/DaveGamb
 
 To compile the example you need [CMake](https://cmake.org/):
 
+## Build
+
 ```bash
-$ cmake -B build
-$ cmake --build build
+cmake -S . -B build
+cmake --build build
 ```
 
-The executable will be in the `build/main` file. The JSON document can be read from the standard input (no arguments) of from a file.
+The executable will be in the `build/main` file.
+
+## Run
+
+The JSON document can be read from the standard input (no arguments) or from a file.
+
+```bash
+./build/main < tests/data/json_org_01.json
+```
